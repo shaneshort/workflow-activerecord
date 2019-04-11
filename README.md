@@ -15,15 +15,15 @@ Coverage](https://codeclimate.com/github/geekq/workflow-activerecord/badges/cove
 
 Major+minor versions of workflow-activerecord are based on the oldest
 compatible ActiveRecord API. To use [`workflow`][workflow] with
-Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2 please use:
+Rails/ActiveRecord 4.2, 5.0, 5.1, 5.2, 6.0 please use:
 
-    gem 'workflow-activerecord', '>= 4.1', '< 6.0'
+    gem 'workflow-activerecord', '>= 4.2', '< 6.1'
 
 This will also automatically include the newest compatible version of
 the core 'workflow' gem. But you can also choose a specific version:
 
     gem 'workflow', '~> 2.0'
-    gem 'workflow-activerecord', '>= 4.1pre', '< 6.0'
+    gem 'workflow-activerecord', '>= 4.2pre', '< 6.1'
 
 Please also have a look at [the sample application][]!
 
@@ -188,11 +188,16 @@ example][multiple_workflow_test]!
 Changelog
 ---------
 
+### New in the version 4.2.0
+
+* retire Rails 4.1; to continue using with Rails 4.1 please reference
+  workflow-activerecord '~> 4.1'
+
 ### New in the version 4.1.3
 
 * retire Ruby 2.3 and Rails 4.1 since this Ruby version has reached end of life
 * add build for Rails 6.0 beta, Ruby 2.6
-* fix #4 ruby-graphiz warnings
+* fix gh-4 ruby-graphiz warnings
 
 ### New in the version 4.1.0
 
